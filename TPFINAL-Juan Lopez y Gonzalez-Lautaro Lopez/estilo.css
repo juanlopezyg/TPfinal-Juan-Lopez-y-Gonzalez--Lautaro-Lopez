@@ -1,0 +1,178 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19, 3, 77);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 13px 20px #dddcec;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    height: 50px;
+}
+
+.imglogo {
+    border-radius: 10px;
+}
+
+.titulo {
+    width: 50%;
+    height: 60px;
+    align-items: center;
+
+}
+
+.compraAqui {
+    font-size: 20px;
+    width: 20%;
+    height: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 10px;
+
+}
+
+nav a:hover {
+    font-size: 21px;
+    color: aquamarine;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(172, 172, 219);
+}
+
+.imgSupermercado {
+    border-radius: 25px;
+    float: right;
+    width: 35%;
+    height: 320px;
+}
+
+.imgSupermercadomain {
+    margin-top: 20px;
+    border-radius: 25px;
+    float: right;
+    width: 35%;
+    height: 320px;
+}
+
+.img3 {
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 60%;
+    height: 210px;
+}
+
+.pagina2 {
+    text-decoration: none;
+    color: #13304d;
+}
+
+.pagina2:hover {
+    color: rgb(156, 19, 14);
+}
+
+
+h1 {
+    color: rgb(240, 240, 240);
+    font-size: 40px;
+}
+
+h2 {
+    color: rgb(10, 1, 41);
+}
+
+.numero {
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+.pie-pagina {
+    color: aliceblue;
+    background-color: #0a141d;
+    width: 100%;
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    font-size: 25px;
+    color: aquamarine
+}
+
+.pie-pagina .grupo2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+}

@@ -1,0 +1,208 @@
+* {
+    padding: 0%;
+    margin: 0%;
+
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19, 3, 77);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 13px 20px #dddcec;
+}
+
+.logo {
+    display: flex;
+    width: 20%;
+    height: 50px;
+}
+
+.imglogo {
+    border-radius: 10px;
+}
+
+.titulo {
+    width: 50%;
+    height: 60px;
+    align-items: center;
+}
+
+.compraAqui {
+    font-size: 20px;
+    width: 20%;
+    height: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 10px;
+
+}
+
+nav a:hover {
+    font-size: 21px;
+    color: aquamarine;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+main {
+    color: #fdfdfd;
+    width: 100%;
+}
+
+main h1 {
+    background-color: #cbe6f5;
+    color: #030303;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(cabecera-de-gondola.jpg);
+}
+
+.producto {
+    background-color: #f5eded;
+    border-color: #0d2033;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+    width: 26%;
+    height: 120px;
+
+}
+
+.nombre-producto {
+    color: #042444;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.acciones {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+    height: 100px;
+}
+
+.acciones input {
+    font-size: 17px;
+}
+
+#lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btnComprar {
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 30px;
+    color: rgb(5, 13, 48);
+    background-color: #a1c8f0;
+}
+
+.btnComprar:hover {
+    background-color: #c0d8f0;
+
+}
+
+.error-mensaje {
+    text-align: center;
+    background-color: #fdfdfd;
+    color: red;
+    font-weight: bold;
+}
+
+.total {
+    text-align: center;
+    background-color: #8b1911;
+    color: #e9dfdf;
+    text-decoration: underline;
+
+}
+
+.pie-pagina {
+    color: aliceblue;
+    background-color: #0a141d;
+    width: 100%;
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img {
+    width: 250px;
+    border-radius: 20px;
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo1 .redsocial a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover {
+    font-size: 25px;
+    color: aquamarine
+}
+
+.pie-pagina .grupo2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo2 small {
+    font-size: 15px;
+}
