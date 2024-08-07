@@ -4,19 +4,6 @@
     box-sizing: border-box;
 }
 
-
-header{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(19, 3, 77);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 7px 13px 20px #dddcec;
-
-}
-
 .logo{
     display: flex;
     width: 20%;
@@ -177,6 +164,7 @@ border-radius: 20px;
     background-color: #0d2033;
     text-align: center;
     transition: all 300ms ease;
+    box-shadow: 6px 8px 22px #9c9caf;
 }
 .pie-pagina .grupo1 .redsocial a:hover{
     font-size: 25px;

@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // agregar el event listener al formulario
     formulario.addEventListener("submit", (e) => {
-        e.preventDefault(); 
+        e.preventDefault();
 
-        if (!formulario.reportValidity()) {   // para que funcione la validacion
+        /*if (!formulario.reportValidity()) {   // para que funcione la validacion
             return;
-        }
+        }*/
 
         // recolecta la información
         let informacion = [

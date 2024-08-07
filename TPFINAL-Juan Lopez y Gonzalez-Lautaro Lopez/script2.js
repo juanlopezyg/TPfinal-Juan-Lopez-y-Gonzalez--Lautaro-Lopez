@@ -59,7 +59,6 @@ const productos = [
     { nombre: 'Cif crema Bioactive', precio: 1600, stock: 12 },
     { nombre: 'Trapo de piso', precio: 3000, stock: 6 },
     { nombre: 'Franela', precio: 1200, stock: 8 },
-    
 ];
 
 // carrito de compras
@@ -77,12 +76,13 @@ function pintarProductos() {
         productName.className = 'nombre-producto';
         productName.textContent = `${producto.nombre} - ${producto.precio} $ (Stock: ${producto.stock})`;
 
+//creo un input de tipo numero y como minimo 0.
         const cantidadInput = document.createElement('input');
         cantidadInput.type = 'number';
         cantidadInput.min = '0';
         cantidadInput.value = '0';
         cantidadInput.className= 'input'
-        cantidadInput.dataset.index = index; // Identificador del producto
+        cantidadInput.dataset.index = index; // indentifico el producto
 
         const comprarBtn = document.createElement('button');
         comprarBtn.textContent = 'Comprar';
@@ -106,24 +106,20 @@ function agregarAlCarrito(index, cantidad) {
     const errorMessageDiv = document.getElementById('error-mensaje');
     errorMessageDiv.textContent = '';  // Limpiar mensaje de error previo
 
+    //condicionales
     if (cantidad > 0) {
-        const producto = productos[index];
-        if (cantidad <= producto.stock) {
+        const producto = productos[index];        
+        if (cantidad <= producto.stock) {//si la cantidad esta disponible en el stock
             const itemEnCarrito = carrito.find(item => item.nombre === producto.nombre);
 
             if (itemEnCarrito) {
-        //hago un if por si se exece cantidad.
-                if (itemEnCarrito.cantidad + cantidad <= producto.stock) {
-                    itemEnCarrito.cantidad += cantidad;
+                    itemEnCarrito.cantidad += cantidad; // le sumo la cantidad nueva del usuario al carrito
                 } else {
-                    errorMessageDiv.textContent = `No hay suficiente stock de ${producto.nombre}.`;
-                    return;
-                }
-            } else {
+                    
                 carrito.push({ nombre: producto.nombre, precio: producto.precio, cantidad: cantidad });
             }
 
-            // Reducir el stock disponible
+            // actualizar stock y total
             producto.stock -= cantidad;
             actualizarTotal();
             actualizarStock();
@@ -146,17 +142,17 @@ function actualizarTotal() {
 
 // función para actualizar el stock
 function actualizarStock() {
-    const listaProductos = document.getElementById('lista-productos');
+    const listaProductos = document.getElementById('lista-productos'); //selecciono los divs
     const productosDivs = listaProductos.getElementsByClassName('producto');
     
     productos.forEach((producto, index) => {
         const productDiv = productosDivs[index];
-        const productName = productDiv.querySelector('.nombre-producto');
-        productName.textContent = `${producto.nombre} - ${producto.precio} € (Stock: ${producto.stock})`;
+        const productName = productDiv.querySelector('.nombre-producto');//selecciono el span dentro del div
+        productName.textContent = `${producto.nombre} - ${producto.precio} $ (Stock: ${producto.stock})`;//se actualiza la info del span
     });
 }
 
-// uso un addEventListener para cargar la pagina.
+// uso un addEventListener para cargar la pagina y se ejecuta la funcion
 document.addEventListener('DOMContentLoaded', pintarProductos);
 
 
